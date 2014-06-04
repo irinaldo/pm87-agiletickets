@@ -21,6 +21,8 @@ public class JPAEstabelecimentoDao implements DiretorioDeEstabelecimentos {
 	public List<Estabelecimento> todos() {
 		return manager.createQuery("select e from Estabelecimento e", Estabelecimento.class).getResultList();
 	}
+	
+
 
 	@Override
 	public void adiciona(Estabelecimento estabelecimento) {
