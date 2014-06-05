@@ -97,8 +97,9 @@ public class Sessao {
 		this.ingressosReservados += numeroDeIngressos;
 	}
 
-	public boolean podeReservar(Integer nroDeIngressos) {
-        return getIngressosDisponiveis() >= nroDeIngressos;
+	public boolean podeReservar(Integer numeroDeIngressos) {
+        return getIngressosDisponiveis() >= numeroDeIngressos;
+
 	}
 
 	public void setPreco(BigDecimal preco) {
